@@ -23,6 +23,13 @@ public:
         blue = b;
     }
 
+    Color(int r, int g)
+    {
+        red = r;
+        green = g;
+        blue = 0;
+    }
+
     void setRed(int r)
     {
         red = r;
@@ -65,15 +72,7 @@ int main()
 {
     Color color1;
     Color color2(0, 150, 255);
-    Color color3;
-
-    color1.setRed(255);
-    color1.setGreen(100);
-    color1.setBlue(50);
-
-    color3.setRed(80);
-    color3.setGreen(200);
-    color3.setBlue(120);
+    Color color3(80, 200);
 
     cout << "Color Values" << endl;
     cout << "------------" << endl;
