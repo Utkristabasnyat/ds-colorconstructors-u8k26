@@ -9,6 +9,13 @@ private:
     int blue;
 
 public:
+    Color()
+    {
+        red = 0;
+        green = 0;
+        blue = 0;
+    }
+
     void setRed(int r)
     {
         red = r;
